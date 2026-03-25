@@ -86,7 +86,7 @@ void rbx::render::render_hooks() {
     }
 
     // From here on, we are touching the COM objects (Swapchain)
-    // which usually require standard HRESULT checks rather than SEH
+    // which usually require HRESULT checks rather than SEH
     swap_chain = *reinterpret_cast<IDXGISwapChain**>(rbx_device + Offsets::render::Swapchain);
     if (!swap_chain) {
         Roblox::Print(3, "Error: SwapChain is null");
