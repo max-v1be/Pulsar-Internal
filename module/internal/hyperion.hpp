@@ -57,7 +57,7 @@ __forceinline static bool is_ptr_valid(T* tValue) {
 
     return true;
 }
-
+ // this is never used can be removed
 namespace rbx::hyperion {
     static void add_to_cfg(void* address) {
         if (address == nullptr)
